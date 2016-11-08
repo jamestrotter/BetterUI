@@ -1,0 +1,28 @@
+#navbar .navbar-inner {
+  min-height: 84px;
+  background: no-repeat #0b4600;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#0d8400), to(#0b4600));
+  background-image: -webkit-radial-gradient(circle, #0d8400, #0b4600);
+  background-image: -moz-radial-gradient(circle, #0d8400, #0b4600);
+  background-image: -o-radial-gradient(circle, #0d8400, #0b4600);
+}
+#navbar .navbar-inner .brand {
+  margin-top: 20px;
+}
+#navbar .navbar-inner .brand,
+#navbar .navbar-inner .nav > li > a {
+  color: white;
+  text-shadow: none;
+}
+#navbar .navbar-inner i[class^="icon-"] {
+  color: gray;
+}
+#navbar .navbar-inner .nav {
+  margin-top: 10px;
+}
+#temperature-graph {
+  background: none;
+}
+.accordion .accordion-heading .accordion-toggle {
+  color: #0d8400;
+}
