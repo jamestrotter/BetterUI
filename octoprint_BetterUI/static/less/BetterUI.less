@@ -1,3 +1,65 @@
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width:auto;
+}
+
+#navbar .navbar-inner .nav li.dropdown.open>.dropdown-toggle{
+	background-color:#0b4600;
+	background-image: none;
+}
+
+a {
+    color: #0d8400;
+}
+
+a:hover {
+    color: #073c0c;
+}
+
+.nav-list>.active>a, .nav-list>.active>a:hover {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    background-color: #073c0c;
+}
+
+.nav-pills>.active>a, .nav-pills>.active>a:hover {
+    color: #fff;
+    background-color: #073c0c;
+}
+
+.btn-primary {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color: #005206;
+    background-image: -moz-linear-gradient(top,#098c01,#005206);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#098c01),to(#005206));
+    background-image: -webkit-linear-gradient(top,#098c01,#005206);
+    background-image: -o-linear-gradient(top,#098c01,#005206);
+    background-image: linear-gradient(to bottom,#098c01,#005206);
+    background-repeat: repeat-x;
+    border-color: none;
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.slider .slider-selection {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color: #006dcc;
+    background-image: -moz-linear-gradient(top,#098c01,#005206);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#098c01),to(#005206));
+    background-image: -webkit-linear-gradient(top,#098c01,#005206);
+    background-image: -o-linear-gradient(top,#098c01,#005206);
+    background-image: linear-gradient(to bottom,#098c01,#005206);
+    background-repeat: repeat-x;
+    border-color: #005206 #005206 #002a80;
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary[disabled] {
+    color: #fff;
+    background-color: #07540e;
+}
 
 #navbar {
 	.navbar-inner{
@@ -8,8 +70,25 @@
 		background-image: -moz-radial-gradient(circle,#0d8400,#0b4600);
 		background-image: -o-radial-gradient(circle,#0d8400,#0b4600);
 		
+		.container{
+			max-width:940px;
+		}
 		.brand{
-			margin-top:20px;
+			margin-top:5px;
+			margin-bottom:5px;
+			span {
+				content:none;
+				display:none;
+			}
+			
+			&:after{
+				content: " ";
+				display:block;
+				width:180px;
+				height:60px;
+				background-image: url(../img/Octoprint_Logo.png);
+				background-size:cover;
+			}
 		}
 		
 		.brand, .nav>li>a {
@@ -17,8 +96,9 @@
 			text-shadow: none;
 		}
 		
+		
 		i[class^="icon-"]{
-			color:gray;
+			color:#13c100;
 		}
 		
 		.nav {
@@ -38,3 +118,53 @@
 		}
 	}
 }
+
+/*@media only screen and (max-device-width: 400px) {
+	.span4{
+		&:before{
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			text-decoration: inherit;
+			-webkit-font-smoothing: antialiased;
+				
+			font-size:20px;
+			
+			position:absolute;
+			content:"\f152";
+			right:-25px;
+			top:-25px;
+			width:30px;
+			height:30px;
+			
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+			background-color: #005206;
+			background-image: -moz-linear-gradient(top,#098c01,#005206);
+			background-image: -webkit-gradient(linear,0 0,0 100%,from(#098c01),to(#005206));
+			background-image: -webkit-linear-gradient(top,#098c01,#005206);
+			background-image: -o-linear-gradient(top,#098c01,#005206);
+			background-image: linear-gradient(to bottom,#098c01,#005206);
+			background-repeat: repeat-x;
+			border-color: none;
+			border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+			filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		}
+		
+		position:absolute;
+		left:0;
+		
+		background: white;
+		z-index: 100;
+		min-width: 40%;
+		left:-40%;
+		
+		.open{
+			left:0;
+		}
+	}
+	
+	.span8 {
+		width:100%;
+	}
+}*/
